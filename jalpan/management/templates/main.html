@@ -1,8 +1,14 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-
-<body>
-    <h1>Hello There...</h1>
-</body>
-
+	<body>
+		<div>
+			<h1>Hello There...</h1>
+			{% for food in foodList %}
+			<div>{{food.id}} : {{food.foodName}}</div>
+			{% endfor%}
+		</div>
+		<a href="addFood/">Add Food Item</a>
+	</body>
 </html>

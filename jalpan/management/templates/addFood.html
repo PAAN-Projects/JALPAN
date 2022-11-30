@@ -1,0 +1,12 @@
+<!-- @format -->
+
+<html>
+	<body>
+		<h1>Add Food item:</h1>
+		<form action="addFoodRecord/" method="post">
+			{% csrf_token %} Food Name:
+			<input type="text" name="foodName" />
+			<input type="submit" value="Submit" />
+		</form>
+	</body>
+</html>
