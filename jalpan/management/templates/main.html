@@ -1,14 +1,69 @@
 <!-- @format -->
+{% load static %}
 
 <!DOCTYPE html>
 <html lang="en">
 	<body>
-		<div>
-			<h1>Hello There...</h1>
-			{% for food in foodList %}
-			<div>{{food.id}} : {{food.foodName}}</div>
-			{% endfor%}
-		</div>
-		<a href="addFood/">Add Food Item</a>
+		<link href="{% static 'reset.css' %}" rel="stylesheet" />
+		<!-- Required Material Web library -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+
+		<header class="mdc-top-app-bar">
+			<div class="mdc-top-app-bar__row">
+				<section
+					class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start"
+				>
+					<button
+						class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button"
+						aria-label="Open navigation menu"
+					>
+						menu
+					</button>
+					<span class="mdc-top-app-bar__title"
+						>Manager Restaurant</span
+					>
+				</section>
+				<section
+					class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end"
+					role="toolbar"
+				>
+					<button
+						class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+						aria-label="Favorite"
+					>
+						add
+					</button>
+					<button
+						class="material-icons mdc-top-app-bar__action-item mdc-icon-button"
+						aria-label="Options"
+					>
+						more_vert
+					</button>
+				</section>
+			</div>
+		</header>
+		<main class="mdc-top-app-bar--fixed-adjust">
+			<div>
+				<h1>Hello There...</h1>
+				{% for food in foodList %}
+				<div>{{food.id}} : {{food.foodName}}</div>
+				{% endfor%}
+			</div>
+			<a href="addFood/">Add Food Item</a>
+		</main>
+		<script>
+			const topAppBarElement =
+				document.querySelector(".mdc-top-app-bar");
+			const topAppBar =
+				mdc.topAppBar.MDCTopAppBar.attachTo(topAppBarElement);
+		</script>
 	</body>
 </html>
