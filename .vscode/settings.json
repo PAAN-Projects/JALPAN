@@ -1,3 +1,14 @@
 {
-    "python.formatting.provider": "black"
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "autopep8",
+    "emmet.includeLanguages": {
+        "django-html": "html"
+    },
+    "files.associations": {
+        "**/*.html": "html",
+        "**/templates/**/*.html": "django-html",
+        "**/templates/**/*": "django-txt",
+        "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    },
+    "python.analysis.typeCheckingMode": "off",
 }
