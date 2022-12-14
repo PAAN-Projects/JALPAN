@@ -26,3 +26,8 @@ def addFoodRecord(request):
     food = Food(food_name=foodName, food_catagory=foodCatagory)
     food.save()
     return HttpResponseRedirect(reverse('management'))
+
+
+def orderRecords(request):
+    template = loader.get_template("orders.html")
+    return HttpResponse(template.render({}, request))
