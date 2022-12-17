@@ -23,7 +23,11 @@ def addFood(request):
 def addFoodRecord(request):
     foodName = request.POST['foodName']
     foodCatagory = request.POST['foodCatagory']
-    food = Food(food_name=foodName, food_catagory=foodCatagory)
+    foodSpicy = request.POST['isFoodSpicy']
+    foodPrice = request.POST['foodPrice']
+
+    food = Food(food_name=foodName, food_catagory=foodCatagory,
+                food_is_spicy=foodSpicy, food_price=foodPrice)
     food.save()
     return HttpResponseRedirect(reverse('management'))
 

@@ -3,8 +3,21 @@ from django.db import models
 
 
 class Food(models.Model):
-    food_name = models.CharField(max_length=255)
+    food_name = models.CharField(max_length=128)
+    """ Food Name """
+
     food_catagory = models.CharField(max_length=255)
+    """ 
+    Food Catagories.\n
+    Example:\n
+    Thai, Chinese, Indian, Multicuisine
+    """
+
+    food_is_spicy = models.BooleanField()
+    """ Is food spicy """
+
+    food_price = models.IntegerField()
+    """ Price of food """
 
 
 class Orders(models.Model):
