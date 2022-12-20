@@ -1,27 +1,24 @@
 <!-- @format -->
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-<body>
-	{% comment %} <!-- Importing Bootstrap -->
-	<link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet" />
-	<script src="{% static "bootstrap/js/bootstrap.bundle.min.js"%}"></script> {% endcomment %}
-		{% block navbar%}
-		{% include "navbar.html"%}
-		{% endblock %}
-		<main class="mdc-top-app-bar--fixed-adjust">
-			<div>
-				<h1>Hello There...</h1>
-				{% for food in foodList %}
-				<div>{{food.id}} : {{food.food_name}}</div>
-				{% endfor%}
-			</div>
-			<a href="addFood/">Add Food Item</a>
-		</main>
-	</body>
-	</html>
-	
+    <head>
+        <title>Management | Dashboard</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        {% comment %} <!-- Importing Bootstrap -->
+                                	<link href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+                                	      rel="stylesheet"/>
+        <script src="{% static "bootstrap/js/bootstrap.bundle.min.js"%}"></script> {% endcomment %}
+        {% block navbar %}
+            {% include "navbar.html" %}
+        {% endblock %}
+        <main>
+            <div>
+                <h1>Hello There...</h1>
+                {% for food in foodList %}<div>{{ food.id }} : {{ food.food_name }}</div>{% endfor %}
+            </div>
+        </main>
+    </body>
+</html>

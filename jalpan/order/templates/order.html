@@ -1,5 +1,18 @@
 <!-- @format -->
+{% load static %}
+{% load menu_tags %}
 <!DOCTYPE html>
 <html lang="en">
-	<body></body>
+    <head>
+        <title>Order</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        {% comment %} {% block navbar %}
+            {% include "navbar.html" %}
+        {% endblock %} {% endcomment %}
+        <main>
+            <div>{% menu_list %}</div>
+        </main>
+    </body>
 </html>

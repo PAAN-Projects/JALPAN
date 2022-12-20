@@ -1,0 +1,7 @@
+{% for foodListCatagorised in RawFoodList %}
+    {% with f=foodListCatagorised.catagory_name %}<h1>{{ f }}</h1>{% endwith %}
+    {% for foodItems in foodListCatagorised.food_items %}
+        {{ foodItems.food_name | linebreaks }}
+        {% comment %} {% with fI=foodListCatagorised.{{f}}{% endwith %} {% endcomment %}
+    {% endfor %}
+{% endfor %}
