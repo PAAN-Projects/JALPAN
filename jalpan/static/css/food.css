@@ -1,0 +1,39 @@
+/** @format */
+
+.food-container {
+	gap: 2em;
+}
+
+.food {
+	overflow: hidden;
+	border: none !important;
+	box-shadow: 0 10px 10px hsl(0deg 0% 80%);
+}
+
+.card-img-overlay-custom {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5em;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 2em;
+	background: linear-gradient(to bottom, rgb(0 0 0 / 0.7), transparent);
+}
+
+p.card-text.price {
+	background: linear-gradient(
+		135deg,
+		hsl(110, 68%, 46%),
+		hsl(110, 68%, 66%)
+	);
+	color: white;
+	width: fit-content;
+	padding: 5px 10px;
+	border-radius: 100px;
+}
+
+.spice {
+	font-size: 1.5em;
+}

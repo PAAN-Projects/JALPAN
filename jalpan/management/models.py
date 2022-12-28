@@ -3,10 +3,10 @@ from django.db import models
 
 
 class Food(models.Model):
-    food_name = models.CharField(max_length=128)
+    food_name = models.CharField(max_length=64)
     """ Food Name """
 
-    food_catagory = models.CharField(max_length=255)
+    food_catagory = models.CharField(max_length=64)
     """ 
     Food Catagories.\n
     Example:\n
@@ -18,6 +18,9 @@ class Food(models.Model):
 
     food_price = models.IntegerField()
     """ Price of food """
+    
+    food_desc = models.CharField(max_length=205)
+    
 
 
 class Orders(models.Model):

@@ -1,5 +1,3 @@
-from audioop import reverse
-from re import template
 from django.urls import reverse
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import loader
@@ -25,9 +23,11 @@ def addFoodRecord(request):
     foodCatagory = request.POST['foodCatagory']
     foodSpicy = request.POST['isFoodSpicy']
     foodPrice = request.POST['foodPrice']
+    foodDesc = request.POST['foodDesc']
 
     food = Food(food_name=foodName, food_catagory=foodCatagory,
-                food_is_spicy=foodSpicy, food_price=foodPrice)
+                food_is_spicy=foodSpicy, food_price=foodPrice,
+                food_desc=foodDesc)
     food.save()
     return HttpResponseRedirect(reverse('management'))
 

@@ -1,7 +1,27 @@
+{% load static %}
 {% for foodListCatagorised in RawFoodList %}
-    {% with f=foodListCatagorised.catagory_name %}<h1>{{ f }}</h1>{% endwith %}
-    {% for foodItems in foodListCatagorised.food_items %}
-        {{ foodItems.food_name | linebreaks }}
-        {% comment %} {% with fI=foodListCatagorised.{{f}}{% endwith %} {% endcomment %}
-    {% endfor %}
+    {% with catagory=foodListCatagorised.catagory_name %}<h1 class="display-4">{{ catagory }}</h1>{% endwith %}
+    <div class="container-fluid">
+        <div class="row food-container mb-5">
+            {% for foodItem in foodListCatagorised.food_items %}
+                <div class="col-sm-3">
+                    <div class="card h-100 food">
+                        <img class="card-img-top"
+                             src="{% static 'images/default/Hex.jpg' %}"
+                             alt="Title"/>
+                        <div class="card-img-overlay-custom">
+                            <span class="iconify spice" data-icon="fxemoji:chilipepper"></span>
+                            <p class="card-text price">
+                                <i class="bi bi-currency-rupee"></i> {{ foodItem.food_price }}
+                            </p>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">{{ foodItem.food_name }}</h3>
+                            <p class="card-subtitle text-muted">{{ foodItem.food_desc }}</p>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 {% endfor %}

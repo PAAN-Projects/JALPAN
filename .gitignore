@@ -171,4 +171,8 @@ cython_debug/
 # Temp DEPS folder
 deps/
 
+# NODE_MODULES
+
+node_modules
+
 # End of https://www.toptal.com/developers/gitignore/api/django

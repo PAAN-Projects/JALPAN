@@ -12,7 +12,7 @@
             {% include "navbar.html" %}
         {% endblock %}
         <div class="container-sm">
-            <h1>Add Food item:</h1>
+            <h1 class="display-3">Add Food item:</h1>
             <form action="add/save" method="post">
                 {% csrf_token %}
                 <div class="form-floating mb-3">
@@ -39,7 +39,7 @@
                            placeholder="Food Price"/>
                     <label for="floatingPrice">Food Price</label>
                 </div>
-                <div class="form-floating mb-5">
+                <div class="form-floating mb-3">
                     <select class="form-select" name="isFoodSpicy" aria-label="Is food spicy?">
                         <option value="True">
                             Yes
@@ -49,6 +49,14 @@
                         </option>
                     </select>
                     <label for="floatingSelect">Is Food Spicy?</label>
+                </div>
+                <div class="form-floating mb-5">
+                    <textarea class="form-control"
+                              name="foodDesc"
+                              id="foodDesc"
+                              rows="2"
+                              placeholder="Food Description"></textarea>
+                    <label for="" class="foodDesc">Food Description</label>
                 </div>
                 <button type="submit" class="btn btn-primary">Add</button>
                 {% comment %} <input type="submit" value="Submit" /> {% endcomment %}

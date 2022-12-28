@@ -71,6 +71,29 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "django-iconify"
+version = "0.3"
+description = "Iconify API implementation and tools for Django projects"
+category = "main"
+optional = false
+python-versions = ">=3.7,<4.0"
+
+[package.dependencies]
+Django = ">2.1,<5.0"
+
+[[package]]
+name = "django-yarnpkg"
+version = "6.0.3"
+description = "Integrate django with yarnpkg"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+django = "*"
+six = "*"
+
+[[package]]
 name = "djlint"
 version = "1.19.7"
 description = "HTML Template Linter and Formatter"
@@ -180,7 +203,7 @@ python-versions = ">=3.6"
 name = "six"
 version = "1.16.0"
 description = "Python 2 and 3 compatibility utilities"
-category = "dev"
+category = "main"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 
@@ -240,7 +263,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "215f5e129bd2953171836dcd0a7ed0b67a953efea59560df9162ce6c4d5be0c5"
+content-hash = "f3e1c497b8907625a288354735df4fd899d126df0e71e1e359a8994fdaa860d5"
 
 [metadata.files]
 asgiref = [
@@ -265,6 +288,13 @@ cssbeautifier = [
 django = [
     {file = "Django-4.1.3-py3-none-any.whl", hash = "sha256:6b1de6886cae14c7c44d188f580f8ba8da05750f544c80ae5ad43375ab293cd5"},
     {file = "Django-4.1.3.tar.gz", hash = "sha256:678bbfc8604eb246ed54e2063f0765f13b321a50526bdc8cb1f943eda7fa31f1"},
+]
+django-iconify = [
+    {file = "django-iconify-0.3.tar.gz", hash = "sha256:ced9314f011b318ccf56dd5145ca54bb3ec2a7dde3880571552236a31ebbcd97"},
+]
+django-yarnpkg = [
+    {file = "django-yarnpkg-6.0.3.tar.gz", hash = "sha256:c2b65fed5ae1b85c9334c91e572b598d3879e038428247f6e10dde2aaf828745"},
+    {file = "django_yarnpkg-6.0.3-py3-none-any.whl", hash = "sha256:b38e8ceb72057b2695974f7ba1578f4abf98569b47c94e187816d72203b007ed"},
 ]
 djlint = [
     {file = "djlint-1.19.7-py3-none-any.whl", hash = "sha256:517b1a2dfb943854abaf8b1ad2117d5c2e699d5916cd2621e24f8669eb564af2"},
