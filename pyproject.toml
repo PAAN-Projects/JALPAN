@@ -14,6 +14,8 @@ django-yarnpkg = "^6.0.3"
 
 [tool.poetry.group.dev.dependencies]
 djlint = "^1.19.7"
+autopep8 = "^2.0.1"
+poethepoet = "^0.17.1"
 
 [tool.poe.tasks]
 migrate = "py jalpan/manage.py migrate"
