@@ -149,3 +149,6 @@ YARN_INSTALLED_APPS = [
 ]
 
 ICONIFY_JSON_ROOT = os.path.join(NODE_MODULES_ROOT, "@iconify", "json")
+MEDIA_URL = '/media/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
