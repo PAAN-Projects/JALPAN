@@ -6,9 +6,9 @@
       rel="stylesheet"/>
 <script src="{% static 'bootstrap/js/bootstrap.bundle.min.js'%}"></script>
 <section>
-  <nav class="navbar navbar-expand-lg navbar-dark shadow bg-dark ">
+  <nav class="navbar navbar-expand-lg navbar-dark shadow-lg bg-dark ">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Management</a>
+      <a class="navbar-brand" href="/management">Management</a>
       <button class="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -34,7 +34,7 @@
                aria-expanded="false">
               Food List
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu shadow-sm">
               <li>
                 <a class="dropdown-item" href="/management/food/add">
                   <i class="bi bi-plus-square"></i>
@@ -44,37 +44,10 @@
                 <hr class="dropdown-divider" />
               </li>
               <li>
-                <a class="dropdown-item" href="#">
+                <a class="dropdown-item" href="/management/food/manage">
                   <i class="bi bi-gear-wide-connected">
                   Manage</i>
                 </a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle"
-               href="#"
-               role="button"
-               data-bs-toggle="dropdown"
-               aria-expanded="false">Orders</a>
-            <ul class="dropdown-menu">
-              <li>
-                <a class="dropdown-item" href="/management/orders/records">
-                  <i class="bi bi-list-columns"></i>
-                Order Record</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <i class="bi bi-plus-square"></i>
-                Order</a>
-              </li>
-              <li>
-                <hr class="dropdown-divider" />
-              </li>
-              <li>
-                <a class="dropdown-item" href="#">
-                  <i class="bi bi-gear-wide-connected"></i>
-                Manage</a>
               </li>
             </ul>
           </li>

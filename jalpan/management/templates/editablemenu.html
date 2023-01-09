@@ -1,0 +1,43 @@
+{% load static %}
+{% if RawFoodList %}
+    {% for foodListCatagorised in RawFoodList %}
+        {% with catagory=foodListCatagorised.catagory_name %}<h1 class="display-4">{{ catagory }}</h1>{% endwith %}
+        <div class="container-fluid">
+            <div class="row food-container mb-5">
+                {% for foodItem in foodListCatagorised.food_items %}
+                    <div class="col-sm-3">
+                        <div class="card h-100 food">
+                            <img class="card-img-top"
+                                 src="{% static 'images/default/Hex.jpg' %}"
+                                 alt="Title"/>
+                            <div class="card-img-overlay-custom">
+                                <p class="card-text price">
+                                    <i class="bi bi-currency-rupee"></i> {{ foodItem.food_price }}
+                                </p>
+                                {% if foodItem.food_is_spicy == True %}
+                                    <object class="spice"
+                                            data="{% static 'images/svg/chili.svg' %}"
+                                            type="image/svg+xml"></object>
+                                {% else %}
+                                    <div class="visually-hidden"></div>
+                                {% endif %}
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">{{ foodItem.food_name }}</h3>
+                                <p class="card-subtitle text-muted">{{ foodItem.food_desc }}</p>
+                            </div>
+                            <div class="card-footer text-center">
+                                <a href="/management/food/remove/{{ foodItem.food_id }}"
+                                   class="btn btn-danger"><i class="bi bi-trash"></i></a>
+                                <a href="/management/food/edit/{{ foodItem.food_id }}/{{ foodItem.food_name }}/{{ foodItem.food_catagory }}/{{ foodItem.food_price }}/{{ foodItem.food_is_spicy }}/{{ foodItem.food_desc }}"
+                                   class="btn btn-light"><i class="bi bi-pencil"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    {% endfor %}
+{% else %}
+    <h1 class="display-1">Oops, Nothing Here</h1>
+{% endif %}

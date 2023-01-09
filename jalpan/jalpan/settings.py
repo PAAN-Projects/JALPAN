@@ -38,8 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django_yarnpkg',
-    "dj_iconify.apps.DjIconifyConfig",
     'management.apps.managementConfig',
     'order.apps.OrderConfig'
 ]
@@ -110,7 +108,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Calcutta'
 
 USE_I18N = True
 
@@ -122,14 +120,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-NODE_MODULES_ROOT = os.path.join(BASE_DIR, 'node_modules')
-
-print(NODE_MODULES_ROOT)
-
 STATICFILES_FINDERS = [
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-    'django_yarnpkg.finders.NodeModulesFinder',
 ]
 
 STATICFILES_DIRS = [
@@ -142,13 +135,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# YARN_PATH = "C:/Program Files/nodejs/yarn.CMD"
-
-YARN_INSTALLED_APPS = [
-    "@iconify/json",
-]
-
-ICONIFY_JSON_ROOT = os.path.join(NODE_MODULES_ROOT, "@iconify", "json")
 MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

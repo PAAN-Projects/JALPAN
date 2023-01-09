@@ -3,6 +3,9 @@ from django.db import models
 
 
 class Food(models.Model):
+    food_id = models.CharField(max_length=64, blank=True)
+    """ Unique food id """
+
     food_name = models.CharField(max_length=64)
     """ Food Name """
     food_image = models.ImageField(null=True, blank=True, upload_to="images/")
@@ -19,9 +22,8 @@ class Food(models.Model):
 
     food_price = models.IntegerField()
     """ Price of food """
-    
+
     food_desc = models.CharField(max_length=205)
-    
 
 
 class Orders(models.Model):
@@ -64,5 +66,5 @@ class Orders(models.Model):
 
     order_medium = models.CharField(max_length=40)
     """ Order medium """
-    
+
 # Create your models here.

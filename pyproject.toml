@@ -9,8 +9,7 @@ license = "MIT"
 python = "^3.10"
 Django = "^4.1.3"
 autopep8 = "^2.0.0"
-django-iconify = "^0.3"
-django-yarnpkg = "^6.0.3"
+pillow = "^9.4.0"
 
 [tool.poetry.group.dev.dependencies]
 djlint = "^1.19.7"
