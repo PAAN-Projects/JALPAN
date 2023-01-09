@@ -8,7 +8,7 @@
         {% endblock %}
         <div class="container-sm">
             <h1 class="display-3">Add Food item:</h1>
-            <form action="add/save" method="post">
+            <form action="/management/food/add/save" method="post">
                 {% csrf_token %}
                 <div class="form-floating mb-3">
                     <input type="text"
