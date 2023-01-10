@@ -28,8 +28,9 @@ def addFoodRecord(request):
     foodSpicy = request.POST['isFoodSpicy']
     foodPrice = request.POST['foodPrice']
     foodDesc = request.POST['foodDesc']
+    foodImage = request.FILES['foodImage']
 
-    food = Food(food_id=foodId, food_name=foodName, food_catagory=foodCatagory,
+    food = Food(food_id=foodId, food_image=foodImage, food_name=foodName, food_catagory=foodCatagory,
                 food_is_spicy=foodSpicy, food_price=foodPrice,
                 food_desc=foodDesc)
     food.save()
