@@ -74,10 +74,14 @@ def editFoodRecord(request):
     foodSpicy = request.POST['isFoodSpicy']
     foodPrice = request.POST['foodPrice']
     foodDesc = request.POST['foodDesc']
+    try:
+        foodImage = request.FILES['foodImage']
+    except:
+        foodImage = ""
 
     food = Food.objects.filter(food_id=foodId)
 
-    food.update(food_id=foodId, food_name=foodName, food_catagory=foodCatagory,
+    food.update(food_id=foodId, food_image=foodImage, food_name=foodName, food_catagory=foodCatagory,
                 food_is_spicy=foodSpicy, food_price=foodPrice,
                 food_desc=foodDesc)
 
