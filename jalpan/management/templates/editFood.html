@@ -22,10 +22,9 @@
                     value="{{ foodCatagory }}" placeholder="Food Catagory" />
                 <label for="floatingInput">Food Catagory</label>
             </div>
-            <div class="form-floating mb-3">
-                <input type="image" class="form-control" id="floatingInput" name="foodImage" value="{{ foodImage }}"
-                    placeholder="Food Inage" />
-                <label for="floatingInput">Food Image</label>
+            <div class="mb-3">
+                <label for="foodImage" class="form-label">FoodImage</label>
+                <input class="form-control form-control-lg" type="file" id="foodImage" name="foodImage">
             </div>
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingPrice" name="foodPrice" value="{{ foodPrice }}"
