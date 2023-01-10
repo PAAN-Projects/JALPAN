@@ -2,69 +2,65 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-    <body>
-        {% block navbar %}
-            {% include "navbar.html" %}
-        {% endblock %}
-        <div class="container-sm">
-            <h1 class="display-3">Add Food item:</h1>
-            <form action="/management/food/edit/save" method="post">
-                {% csrf_token %}
-                <input type="hidden" name="foodId" value="{{ foodId }}">
-                <div class="form-floating mb-3">
-                    <input type="text"
-                           class="form-control"
-                           id="floatingName"
-                           name="foodName"
-                           value="{{ foodName }}"
-                           placeholder="Food Name"/>
-                    <label for="floatingName">Food Name</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text"
-                           class="form-control"
-                           id="floatingInput"
-                           name="foodCatagory"
-                           value="{{ foodCatagory }}"
-                           placeholder="Food Catagory"/>
-                    <label for="floatingInput">Food Catagory</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <input type="text"
-                           class="form-control"
-                           id="floatingPrice"
-                           name="foodPrice"
-                           value="{{ foodPrice }}"
-                           placeholder="Food Price"/>
-                    <label for="floatingPrice">Food Price</label>
-                </div>
-                <div class="form-floating mb-3">
-                    <select class="form-select" name="isFoodSpicy" aria-label="Is food spicy?">
-                        {% if nfoodIsSpicy == "True" %}
-                            <option selected value="True">
-                                Yes
-                            </option>
-                            <option value="False">
-                                No
-                            </option>
-                        {% else %}
-                            <option value="True">
-                                Yes
-                            </option>
-                            <option selected value="False">
-                                No
-                            </option>
-                        {% endif %}
-                    </select>
-                    <label for="floatingSelect">Is Food Spicy?</label>
-                </div>
-                <div class="form-floating mb-5">
-                    <textarea class="form-control" name="foodDesc" id="foodDesc" rows="2" placeholder="Food Description">{{ foodDesc }}</textarea>
-                    <label for="" class="foodDesc">Food Description</label>
-                </div>
-                <button type="submit" class="btn btn-primary">Update</button>
-                {% comment %} <input type="submit" value="Submit" /> {% endcomment %}
-            </form>
-        </div>
-    </body>
+
+<body>
+    {% block navbar %}
+    {% include "navbar.html" %}
+    {% endblock %}
+    <div class="container-sm">
+        <h1 class="display-3">Add Food item:</h1>
+        <form action="/management/food/edit/save" method="post">
+            {% csrf_token %}
+            <input type="hidden" name="foodId" value="{{ foodId }}">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingName" name="foodName" value="{{ foodName }}"
+                    placeholder="Food Name" />
+                <label for="floatingName">Food Name</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" name="foodCatagory"
+                    value="{{ foodCatagory }}" placeholder="Food Catagory" />
+                <label for="floatingInput">Food Catagory</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="image" class="form-control" id="floatingInput" name="foodImage" value="{{ foodImage }}"
+                    placeholder="Food Inage" />
+                <label for="floatingInput">Food Image</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingPrice" name="foodPrice" value="{{ foodPrice }}"
+                    placeholder="Food Price" />
+                <label for="floatingPrice">Food Price</label>
+            </div>
+            <div class="form-floating mb-3">
+                <select class="form-select" name="isFoodSpicy" aria-label="Is food spicy?">
+                    {% if nfoodIsSpicy == "True" %}
+                    <option selected value="True">
+                        Yes
+                    </option>
+                    <option value="False">
+                        No
+                    </option>
+                    {% else %}
+                    <option value="True">
+                        Yes
+                    </option>
+                    <option selected value="False">
+                        No
+                    </option>
+                    {% endif %}
+                </select>
+                <label for="floatingSelect">Is Food Spicy?</label>
+            </div>
+            <div class="form-floating mb-5">
+                <textarea class="form-control" name="foodDesc" id="foodDesc" rows="2"
+                    placeholder="Food Description">{{ foodDesc }}</textarea>
+                <label for="" class="foodDesc">Food Description</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+            {% comment %} <input type="submit" value="Submit" /> {% endcomment %}
+        </form>
+    </div>
+</body>
+
 </html>
