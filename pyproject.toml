@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "jalpan"
 version = "1.0.0"
-description = "Restaurant management system"
+description = "Menu management system"
 authors = ["Prayag Prajapati <prayagprajapati.17@gmail.com>"]
 license = "MIT"
 
