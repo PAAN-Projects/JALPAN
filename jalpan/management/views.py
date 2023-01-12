@@ -37,11 +37,6 @@ def addFoodRecord(request):
     return HttpResponseRedirect(reverse('management'))
 
 
-def orderRecords(request):
-    template = loader.get_template("orders.html")
-    return HttpResponse(template.render({}, request))
-
-
 def removeFood(request, food_id):
     food = Food.objects.filter(food_id=food_id)
     food.delete()
@@ -74,15 +69,22 @@ def editFoodRecord(request):
     foodSpicy = request.POST['isFoodSpicy']
     foodPrice = request.POST['foodPrice']
     foodDesc = request.POST['foodDesc']
+    food = Food.objects.get(food_id=foodId)
     try:
         foodImage = request.FILES['foodImage']
     except:
-        foodImage = ""
+        f = food.values()
+        foodImage = f[0]["food_image"]
 
-    food = Food.objects.filter(food_id=foodId)
+    print(foodImage)
+    food.food_id = foodId
+    food.food_image = foodImage
+    food.food_name = foodName
+    food.food_catagory = foodCatagory
+    food.food_is_spicy = foodSpicy
+    food.food_price = foodPrice
+    food.food_desc = foodDesc
 
-    food.update(food_id=foodId, food_image=foodImage, food_name=foodName, food_catagory=foodCatagory,
-                food_is_spicy=foodSpicy, food_price=foodPrice,
-                food_desc=foodDesc)
+    food.save()
 
     return HttpResponseRedirect(reverse("manage_food"))

@@ -10,5 +10,4 @@ urlpatterns = [
     path("food/edit/<str:nfoodId>/<str:nfoodName>/<str:nfoodCatagory>/<int:nfoodPrice>/<str:nfoodIsSpicy>/<str:nfoodDesc>",
          views.editFood, name="edit_food"),
     path("food/edit/save", views.editFoodRecord, name="edit_food_record"),
-    path("orders/records", views.orderRecords, name="orders_records"),
 ]
