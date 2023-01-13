@@ -76,7 +76,6 @@ def editFoodRecord(request):
         f = food.values()
         foodImage = f[0]["food_image"]
 
-    print(foodImage)
     food.food_id = foodId
     food.food_image = foodImage
     food.food_name = foodName

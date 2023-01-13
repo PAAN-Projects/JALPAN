@@ -18,9 +18,6 @@ def menu_list():
             "food_items": list(food_list.filter(food_catagory=catagory).all())
         }
         sorted_food.append(filtered)
-    print(sorted_food)
     return {
         "RawFoodList": sorted_food
-        }  
-    # for catagory, food in groupedFood:
-    #     print(catagory, food)
+    }
