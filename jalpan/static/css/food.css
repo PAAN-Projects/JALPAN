@@ -6,8 +6,7 @@
 
 .food {
 	overflow: hidden;
-	border: none !important;
-	box-shadow: 0 10px 10px hsl(0deg 0% 80%);
+	
 }
 
 .card-img-overlay-custom {
