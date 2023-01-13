@@ -9,7 +9,7 @@
     {% endblock %}
     <div class="container-sm">
         <h1 class="display-3">Add Food item:</h1>
-        <form action="/management/food/add/save" method="post" enctype="multipart/formdata">
+        <form action="/management/food/add/save" method="post" enctype="multi-part/formdata">
             {% csrf_token %}
             <div class="form-floating mb-3">
                 <input type="text" class="form-control" id="floatingName" name="foodName" placeholder="Food Name" />
