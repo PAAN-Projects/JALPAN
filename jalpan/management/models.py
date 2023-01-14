@@ -1,4 +1,3 @@
-from tkinter import FALSE
 from django.db import models
 
 
