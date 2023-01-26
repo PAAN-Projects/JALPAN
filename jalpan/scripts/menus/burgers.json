@@ -1,0 +1,65 @@
+[
+    {
+        "img": "images/GramercyTavern.png",
+        "name": "Gramercy Tavern",
+        "dsc": "The Gramercy Tavern Burger - 4 Pack",
+        "price": 99,
+        "isSpicy": false
+    },
+    {
+        "img": "images/ShakeShack.png",
+        "name": "Shake Shack",
+        "dsc": "Shake Shack ShackBurger\u00c2\u00ae \u00e2\u20ac\u201c 8 Pack",
+        "price": 49,
+        "isSpicy": true
+    },
+    {
+        "img": "images/GottsRoadside.png",
+        "name": "Gott's Roadside",
+        "dsc": "Gott's Complete Cheeseburger Kit for 4",
+        "price": 99,
+        "isSpicy": true
+    },
+    {
+        "img": "images/EmmySquared.png",
+        "name": "Emmy Squared",
+        "dsc": "Le Big Matt Burger Kit for 6",
+        "price": 99,
+        "isSpicy": false
+    },
+    {
+        "img": "images/ShakeShack.png",
+        "name": "Shake Shack",
+        "dsc": "Shake Shack Shackburger\u00c2\u00ae \u00e2\u20ac\u201c 16 Pack",
+        "price": 89,
+        "isSpicy": true
+    },
+    {
+        "img": "images/WestholmeWagyu.png",
+        "name": "Westholme Wagyu",
+        "dsc": "Wagyu Burger Patties - 12 Pack",
+        "price": 129,
+        "isSpicy": false
+    },
+    {
+        "img": "images/PeterLugerSteakHouse.png",
+        "name": "Peter Luger Steak House",
+        "dsc": "USDA Prime Burgers - Pack of 18 (8oz each)",
+        "price": 175.95,
+        "isSpicy": false
+    },
+    {
+        "img": "images/OldHomesteadSteakhouse.png",
+        "name": "Old Homestead Steakhouse",
+        "dsc": "Burger Bomb Kit for 6",
+        "price": 129,
+        "isSpicy": false
+    },
+    {
+        "img": "images/Holeman&Finch.png",
+        "name": "Holeman & Finch",
+        "dsc": "Double Stack Burger Kit for 4",
+        "price": 79,
+        "isSpicy": true
+    }
+]

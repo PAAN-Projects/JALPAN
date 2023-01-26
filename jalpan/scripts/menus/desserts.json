@@ -1,0 +1,100 @@
+[
+	{
+		"img": "images/KillerBrownie\u00c2\u00ae.png",
+		"name": "Killer Brownie\u00c2\u00ae",
+		"dsc": "German Chocolate Killer Brownie\u00c2\u00ae",
+		"price": 39.99,
+		"isSpicy": false
+	},
+	{
+		"img": "images/JacquesTorresChocolate.png",
+		"name": "Jacques Torres Chocolate",
+		"dsc": "Jacques\u00e2\u20ac\u2122 World Famous Chocolate Chip Cookies - 6 Pack",
+		"price": 39.95,
+		"isSpicy": false
+	},
+	{
+		"img": "images/TheCannoliPieCompany.png",
+		"name": "The Cannoli Pie Company",
+		"dsc": "Original Cannoli Pie",
+		"price": 69,
+		"isSpicy": false
+	},
+	{
+		"img": "images/CottonBluesCheesecakeCompany.png",
+		"name": "Cotton Blues Cheesecake Company",
+		"dsc": "Sea-Salted Caramel Swirl Cheesecake",
+		"price": 65,
+		"isSpicy": false
+	},
+	{
+		"img": "images/BrooklynBlackoutCompany.png",
+		"name": "Brooklyn Blackout Company",
+		"dsc": "Brooklyn Blackout Cookie + Brownie Combo Pack - 2 Tins",
+		"price": 89,
+		"isSpicy": false
+	},
+	{
+		"img": "images/CraveCupcakes.png",
+		"name": "Crave Cupcakes",
+		"dsc": "Best Seller Cupcake Dozen",
+		"price": 89,
+		"isSpicy": false
+	},
+	{
+		"img": "images/ElegantDesserts.png",
+		"name": "Elegant Desserts",
+		"dsc": "Choose Your Own Ice Cream Donuts - 6 Pack",
+		"price": 69,
+		"isSpicy": false
+	},
+	{
+		"img": "images/Ess-a-Bagel.png",
+		"name": "Ess-a-Bagel",
+		"dsc": "Jewish Classics Dessert Pack",
+		"price": 89.95,
+		"isSpicy": false
+	},
+	{
+		"img": "images/BreadandRosesBakery.png",
+		"name": "Bread and Roses Bakery",
+		"dsc": "Dessert Bar Care Package",
+		"price": 65,
+		"isSpicy": false
+	},
+	{
+		"img": "images/StansDonuts.png",
+		"name": "Stan's Donuts",
+		"dsc": "Donut Cookies - 12 Pack",
+		"price": 49,
+		"isSpicy": false
+	},
+	{
+		"img": "images/MalaiIceCream.png",
+		"name": "Malai Ice Cream",
+		"dsc": "Gulab Jamun Ice Cream Cakes - 2 Pack",
+		"price": 79,
+		"isSpicy": false
+	},
+	{
+		"img": "images/JacquesTorresChocolate.png",
+		"name": "Jacques Torres Chocolate",
+		"dsc": "Jacques\u00e2\u20ac\u2122 World Famous Chocolate Chip Cookies - 12 Pack",
+		"price": 69.95,
+		"isSpicy": false
+	},
+	{
+		"img": "images/TreatHouse.png",
+		"name": "Treat House",
+		"dsc": "Assorted Rice Krispie Treats - 12 Pack",
+		"price": 49,
+		"isSpicy": false
+	},
+	{
+		"img": "images/GraetersIceCream.png",
+		"name": "Graeter's Ice Cream",
+		"dsc": "Ice Cream - Choose Your Own 6 Pints",
+		"price": 79.95,
+		"isSpicy": false
+	}
+]

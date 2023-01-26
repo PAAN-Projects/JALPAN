@@ -1,0 +1,79 @@
+[
+    {
+        "img": "images/LouMalnatisPizza.png",
+        "name": "Lou Malnati's Pizza",
+        "dsc": "2 Lou Malnati's Deep Dish Pizzas",
+        "price": 67.99,
+        "isSpicy": false
+    },
+    {
+        "img": "images/Bartolini\u00e2\u20ac\u2122s.png",
+        "name": "Bartolini\u00e2\u20ac\u2122s",
+        "dsc": "Choose Your Own Thin Crust Pizza - 4 Pack",
+        "price": 139,
+        "isSpicy": false
+    },
+    {
+        "img": "images/ZuppardisApizza.png",
+        "name": "Zuppardi's Apizza",
+        "dsc": "New Haven-Style Pizza - 6 Pack (Choose Your Own)",
+        "price": 79,
+        "isSpicy": false
+    },
+    {
+        "img": "images/LouMalnatisPizza.png",
+        "name": "Lou Malnati's Pizza",
+        "dsc": "6 Lou Malnati's Deep Dish Pizzas",
+        "price": 116.99,
+        "isSpicy": false
+    },
+    {
+        "img": "images/PizzeriaBianco.png",
+        "name": "Pizzeria Bianco",
+        "dsc": "Wood Fired Pizzas Best Seller - 4 Pack",
+        "price": 129,
+        "isSpicy": false
+    },
+    {
+        "img": "images/Bartolini\u00e2\u20ac\u2122s.png",
+        "name": "Bartolini\u00e2\u20ac\u2122s",
+        "dsc": "Choose Your Own Deep Dish Pizza - 3 Pack",
+        "price": 139,
+        "isSpicy": false
+    },
+    {
+        "img": "images/EmmySquared.png",
+        "name": "Emmy Squared",
+        "dsc": "Detroit-Style Pizza - Choose Your Own 3 Pack",
+        "price": 89,
+        "isSpicy": false
+    },
+    {
+        "img": "images/Paesan\u00e2\u20ac\u2122sPizza.png",
+        "name": "Paesan\u00e2\u20ac\u2122s Pizza",
+        "dsc": "Brooklyn Pizza - Choose Your Own 5 Pack",
+        "price": 69,
+        "isSpicy": true
+    },
+    {
+        "img": "images/MyPiPizza.png",
+        "name": "My Pi Pizza",
+        "dsc": "Chicago Deep Dish Pizza - 4 Pack",
+        "price": 129,
+        "isSpicy": false
+    },
+    {
+        "img": "images/LouMalnatisPizza.png",
+        "name": "Lou Malnati's Pizza",
+        "dsc": "4 Lou Malnati's Deep Dish Pizzas",
+        "price": 96.99,
+        "isSpicy": false
+    },
+    {
+        "img": "images/TonysPizzaNapoletana.png",
+        "name": "Tony's Pizza Napoletana",
+        "dsc": "Choose Your Own Pizza - 3 Pack",
+        "price": 99,
+        "isSpicy": false
+    }
+]
