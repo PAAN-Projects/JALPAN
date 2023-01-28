@@ -1,0 +1,23 @@
+[
+    {
+        "img": "images/Alidoro.png",
+        "name": "Alidoro",
+        "dsc": "\"The Gothamist\" Prosciutto + Burrata Sandwich Kit - 4 Pack",
+        "price": 99,
+        "isSpicy": true
+    },
+    {
+        "img": "images/PrimantiBros..png",
+        "name": "Primanti Bros.",
+        "dsc": "Primanti Bros Sandwich Pack - (Choose Your Meat)",
+        "price": 89,
+        "isSpicy": true
+    },
+    {
+        "img": "images/UglyDrum.png",
+        "name": "Ugly Drum",
+        "dsc": "Ugly Buns \"Burnt End\" Sandwich Kit - 6 Pack",
+        "price": 109,
+        "isSpicy": true
+    }
+]

@@ -1,0 +1,44 @@
+[
+    {
+        "img": "images/NewTerritories.png",
+        "name": "New Territories",
+        "dsc": "Hong Kong Boba Tea Kit for 6",
+        "price": 59,
+        "isSpicy": false
+    },
+    {
+        "img": "images/GuyFieri.png",
+        "name": "Guy Fieri",
+        "dsc": "Guy's Caliente Margaritas for 12",
+        "price": 69,
+        "isSpicy": false
+    },
+    {
+        "img": "images/WoodfordReserve.png",
+        "name": "Woodford Reserve",
+        "dsc": "Woodford Reserve Mint Julep Syrup",
+        "price": 39,
+        "isSpicy": false
+    },
+    {
+        "img": "images/FrancosHurricaneMix.png",
+        "name": "Franco's Hurricane Mix",
+        "dsc": "New Orleans Hurricane Mix",
+        "price": 39,
+        "isSpicy": false
+    },
+    {
+        "img": "images/EvanWilliams.png",
+        "name": "Evan Williams",
+        "dsc": "Evan Williams Gourmet Mint Julep Mix - 2 Pack",
+        "price": 39,
+        "isSpicy": false
+    },
+    {
+        "img": "images/JohnnySanchez.png",
+        "name": "Johnny Sanchez",
+        "dsc": "Margarita Mix",
+        "price": 59,
+        "isSpicy": false
+    }
+]

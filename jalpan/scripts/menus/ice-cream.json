@@ -1,0 +1,37 @@
+[
+    {
+        "img": "images/GraetersIceCream.png",
+        "name": "Graeter's Ice Cream",
+        "dsc": "Ice Cream - Choose Your Own 6 Pints",
+        "price": 79.95,
+        "isSpicy": false
+    },
+    {
+        "img": "images/TheBakedBear.png",
+        "name": "The Baked Bear",
+        "dsc": "Ice Cream - Choose Your Own 5 Pints",
+        "price": 99,
+        "isSpicy": false
+    },
+    {
+        "img": "images/MuseumofIceCream.png",
+        "name": "Museum of Ice Cream",
+        "dsc": "Ice Cream - Choose Your Own 6 Pints",
+        "price": 99,
+        "isSpicy": false
+    },
+    {
+        "img": "images/NyesCreamSandwiches.png",
+        "name": "Nye's Cream Sandwiches",
+        "dsc": "Choose Your Own Ice Cream Sandwich - 8 Pack",
+        "price": 79,
+        "isSpicy": false
+    },
+    {
+        "img": "images/MalaiIceCream.png",
+        "name": "Malai Ice Cream",
+        "dsc": "Ice Cream - Choose Your Own 6 Pints",
+        "price": 109,
+        "isSpicy": false
+    }
+]
