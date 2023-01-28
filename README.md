@@ -29,8 +29,9 @@
     ```
 
 - ### Run server
-
-    run the dev server to see the frontend at `localhost:8000`
+    
+    After opening the venv shell
+    run the dev server to see the frontend at `localhost:8000` and the app routes will be listed
 
     ```shell
     py ./jalpan/manage.py runserver
