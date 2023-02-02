@@ -15,4 +15,5 @@
         "**/templates/**/*": "django-txt",
         "**/requirements{/**,*}.{txt,in}": "pip-requirements"
     },
+    "nuxt.isNuxtApp": false,
 }
