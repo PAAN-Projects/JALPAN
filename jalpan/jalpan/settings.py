@@ -40,12 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'management.apps.managementConfig',
     'order.apps.OrderConfig',
-<<<<<<< HEAD
-
     'django_extensions'
-=======
-    'django_extensions',
->>>>>>> b631971844a3ff3cb70b251541ac265d027812a1
 ]
 
 MIDDLEWARE = [
